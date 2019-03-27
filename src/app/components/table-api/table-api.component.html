@@ -1,0 +1,67 @@
+<div class="content">
+  <div *ngIf="isDetail && detailRoute" class="infos-routes">
+      <p>response</p>
+      <div *ngIf="detailRoute.length">
+      <div *ngFor="let val of detailRoute" class="response">
+         {{ val }}
+      </div>
+    </div>
+      <hr>
+      <div *ngIf="queryStr.length">
+        <p>paramètre queryString</p>
+          <div *ngFor="let val of queryStr" class="response">
+              {{ val }}
+           </div>
+           <hr>
+      </div>
+      <div *ngIf="body.length">
+          <p>body</p>
+            <div *ngFor="let val of body" class="response">
+                {{ val }}
+             </div>
+             <hr>
+        </div>
+      <button (click)="isDetail = false">Close</button>
+  </div>
+
+  <div class="info-table">
+
+    <div *ngFor="let route of datasApi?.routes;let i = index" class="table-info">
+
+        <div *ngIf="i == 0" class="name-api">
+            <h3 class="title">API Name</h3>
+          </div>
+          <div *ngIf="i == 0" class="method-api">
+            <h3 class="title">API Method</h3>
+          </div>
+          <div *ngIf="i == 0" class="parameter-api">
+            <h3 class="title">API Parameter</h3>
+          </div>
+          <div *ngIf="i == 0" class="url-api">
+            <h3 class="title">API Url</h3>
+          </div>
+          <div *ngIf="i == 0" class="description-api">
+            <h3 class="title">API Details</h3>
+          </div>
+
+
+        <div [ngClass]="{'name-api-value' : true }">
+            <h3 class="title">{{ route.url.split('/')[1] }}</h3>
+          </div>
+          <div [ngClass]="{ 'method-api-value': true, 'post': route.method == 'POST',  'put': route.method == 'PUT', 'get': route.method == 'GET', 'delete': route.method == 'DELETE'}">
+            <h3 class="title">{{ route.method }}</h3>
+          </div>
+          <div [ngClass]="{ 'parameter-api-value' : true, 'post': route.method == 'POST',  'put': route.method == 'PUT', 'get': route.method == 'GET', 'delete': route.method == 'DELETE'}">
+            <h3 *ngIf="route.hasOwnProperty('queryString') && route.queryString != null "class="title">with parameter</h3>
+            <h3 *ngIf="route.hasOwnProperty('queryString') && route.queryString == null "class="title">No parameter</h3>
+          </div>
+          <div [ngClass]="{ 'url-api-value' : true, 'post': route.method == 'POST',  'put': route.method == 'PUT', 'get': route.method == 'GET', 'delete': route.method == 'DELETE'}">
+            <h3 class="title">{{ route.url }}</h3>
+          </div>
+          <div [ngClass]="{ 'description-api-value' : true, 'post': route.method == 'POST',  'put': route.method == 'PUT', 'get': route.method == 'GET', 'delete': route.method == 'DELETE'}">
+            <button (click)="seeDetails(route)">See Details</button>
+          </div>
+    </div>
+
+  </div>
+</div>

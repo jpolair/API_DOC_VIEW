@@ -1,0 +1,93 @@
+.content {
+    
+}
+.info-table {
+    width: 100%;
+}
+.name-api {
+	position:sticky;top:10px;
+	background: white;
+    grid-column: 1;
+    width:100%;
+}
+.method-api {
+	position:sticky;top:0px;
+	grid-column: 2;
+    background: white;
+    width:100%;
+}
+.parameter-api {
+	position:sticky;top:0px;
+	background: white;
+    grid-column: 3;
+    width:100%;
+}
+.url-api {
+	position:sticky;top:0px;
+	background: white;
+    grid-column: 4;
+    width:100%;
+}
+.description-api {
+	position:sticky;top:0px;
+	background: white;
+    grid-column: 5;
+    width:100%;
+}
+div.table-info {
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    justify-items: center;
+    align-items: center;
+}
+
+h3.title {
+	text-align: center;
+}
+p.description {
+	text-align: center;
+	font-weight: bold;
+}
+.post {
+    background: #33FF7D;
+    width: 100%;
+}
+.put {
+    background: #FFBB33;
+    width: 100%;
+}
+.get {
+    background: #33C1FF;
+    width: 100%;
+}
+.delete {
+    background: #FF5833;
+    width: 100%;
+}
+.name-api-value {
+	grid-column: 1;
+}
+.method-api-value {
+	grid-column: 2;
+}
+.parameter-api-value {
+	grid-column: 3;
+}
+.url-api-value {
+	grid-column: 4;
+}
+.description-api-value {
+	grid-column: 5;
+}
+.description-api-value {
+    height: 100%;
+}
+.description-api-value button {
+    display: block;
+    margin: auto;
+    background: #eee;
+    border-radius: 5%;
+    width: 120px;
+    height: 60%;
+    align-self: center;
+}
