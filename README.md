@@ -6,7 +6,7 @@
 * the file is a list of routes: []
 * one route is like the example below :
 
-```
+```json
 {
       "url": "/authentication/login",
       "method": "GET",
@@ -21,7 +21,7 @@
       },
       "body": null
     }, 
-    ```
+```
 
 ## Development server
 
