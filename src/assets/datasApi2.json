@@ -3,7 +3,6 @@
     {
       "url": "/authentication/login",
       "method": "GET",
-      "description": "SIGN IN screen",
       "queryString": {
         "email": "string",
         "password": "string"
@@ -17,7 +16,6 @@
     {
       "url": "/company",
       "method": "GET",
-      "description": "REGISTRATION screen",
       "queryString": null,
       "response": {
         "id": "guid",
@@ -42,7 +40,6 @@
     {
       "url": "/company/qc/quickCode:string",
       "method": "GET",
-      "description": "REGISTRATION screen",
       "queryString": null,
       "response": {
         "id": "guid",
@@ -67,7 +64,6 @@
     {
       "url": "/company",
       "method": "POST",
-      "description": "REGISTRATION screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -88,7 +84,6 @@
     {
       "url": "/company/quickCode:string",
       "method": "PUT",
-      "description": null,
       "queryString": null,
       "response": null,
       "body": null
@@ -96,7 +91,6 @@
     {
       "url": "/company",
       "method": "PUT",
-      "description": "REGISTRATION screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -117,7 +111,6 @@
     {
       "url": "/flightplan/id:guid",
       "method": "GET",
-      "description": "INFORMATION screen",
       "queryString": null,
       "response": {
         "id": "guid",
@@ -178,7 +171,6 @@
     {
       "url": "/flightplan",
       "method": "GET",
-      "description": "INFORMATION screen",
       "queryString": null,
       "response": [
         {
@@ -241,7 +233,6 @@
     {
       "url": "/flightplan",
       "method": "POST",
-      "description": "INFORMATION screen",
       "queryString": null,
       "response": "guid",
       "body": null
@@ -249,7 +240,6 @@
     {
       "url": "/flightplan/flightPlanModelId:guid",
       "method": "PUT",
-      "description": "INFORMATION screen",
       "queryString": null,
       "response": "guid",
       "body": null
@@ -257,7 +247,6 @@
     {
       "url": "/payment/id:guid",
       "method": "DELETE",
-      "description": "PAYMENT screen",
       "queryString": null,
       "response": null,
       "body": null
@@ -265,7 +254,6 @@
     {
       "url": "/payment",
       "method": "GET",
-      "description": "PAYMENT screen",
       "queryString": null,
       "response": [
         {
@@ -291,7 +279,6 @@
     {
       "url": "/payment",
       "method": "POST",
-      "description": "PAYMENT screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -311,7 +298,6 @@
     {
       "url": "/pilot",
       "method": "GET",
-      "description": "REGISTRATION screen",
       "queryString": null,
       "response": {
         "updatedAt": "dateTime",
@@ -337,7 +323,6 @@
     {
       "url": "/pilot",
       "method": "POST",
-      "description": "REGISTRATION_PILOT screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -363,7 +348,6 @@
     {
       "url": "/plane",
       "method": "GET",
-      "description": "REGISTRATION_AIRCRAFT screen",
       "queryString": null,
       "response": [
         {
@@ -465,7 +449,6 @@
     {
       "url": "/plane/registration",
       "method": "GET",
-      "description": "REGISTRATION_AIRCRAFT screen",
       "queryString": null,
       "response": [
         {
@@ -478,7 +461,6 @@
     {
       "url": "/plane",
       "method": "POST",
-      "description": "REGISTRATION_AIRCRAFT screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -575,7 +557,6 @@
     {
       "url": "/plane/usingid/id:guid",
       "method": "POST",
-      "description": null,
       "queryString": null,
       "response": null,
       "body": null
@@ -583,7 +564,6 @@
     {
       "url": "/salestunnel/step1/id:guid",
       "method": "GET",
-      "description": "INFORMATION screen",
       "queryString": null,
       "response": {
         "currentAircraft": "guid",
@@ -613,16 +593,387 @@
     {
       "url": "/salestunnel/step2/id:guid",
       "method": "GET",
-      "description": "FLIGHT PACKAGE screen",
       "queryString": null,
       "response": {
         "genDec": {
-          "price": "int32",
+          "price": {
+            "zero": {
+              "zero": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "one": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minusOne": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "maxValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              }
+            },
+            "one": {
+              "zero": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "one": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minusOne": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "maxValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              }
+            },
+            "minusOne": {
+              "zero": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "one": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minusOne": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "maxValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              }
+            },
+            "maxValue": {
+              "zero": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "one": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minusOne": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "maxValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              }
+            },
+            "minValue": {
+              "zero": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "one": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minusOne": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "maxValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              }
+            }
+          },
           "description": "string",
           "quantity": "int32"
         },
         "fuel": {
-          "price": "int32",
+          "price": {
+            "zero": {
+              "zero": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "one": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minusOne": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "maxValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              }
+            },
+            "one": {
+              "zero": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "one": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minusOne": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "maxValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              }
+            },
+            "minusOne": {
+              "zero": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "one": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minusOne": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "maxValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              }
+            },
+            "maxValue": {
+              "zero": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "one": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minusOne": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "maxValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              }
+            },
+            "minValue": {
+              "zero": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "one": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minusOne": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "maxValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              },
+              "minValue": {
+                "zero": "decimal",
+                "one": "decimal",
+                "minusOne": "decimal",
+                "maxValue": "decimal",
+                "minValue": "decimal"
+              }
+            }
+          },
           "description": "string",
           "quantity": "int32"
         },
@@ -632,7 +983,193 @@
             "departAirport": "string",
             "arrivalAirport": "string",
             "priceId": "guid",
-            "price": "int32",
+            "price": {
+              "zero": {
+                "zero": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "one": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "minusOne": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "maxValue": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "minValue": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                }
+              },
+              "one": {
+                "zero": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "one": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "minusOne": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "maxValue": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "minValue": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                }
+              },
+              "minusOne": {
+                "zero": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "one": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "minusOne": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "maxValue": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "minValue": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                }
+              },
+              "maxValue": {
+                "zero": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "one": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "minusOne": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "maxValue": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "minValue": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                }
+              },
+              "minValue": {
+                "zero": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "one": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "minusOne": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "maxValue": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                },
+                "minValue": {
+                  "zero": "decimal",
+                  "one": "decimal",
+                  "minusOne": "decimal",
+                  "maxValue": "decimal",
+                  "minValue": "decimal"
+                }
+              }
+            },
             "zone1": "boolean"
           }
         ]
@@ -642,7 +1179,6 @@
     {
       "url": "/salestunnel/step3/id:guid",
       "method": "GET",
-      "description": "HANDLING screen",
       "queryString": null,
       "response": {
         "legs": [
@@ -661,7 +1197,6 @@
     {
       "url": "/salestunnel/step4/id:guid",
       "method": "GET",
-      "description": "CATERING screen",
       "queryString": null,
       "response": {
         "legs": [
@@ -686,7 +1221,6 @@
     {
       "url": "/salestunnel/step5/id:guid",
       "method": "GET",
-      "description": "TRANSPORT Search screen",
       "queryString": null,
       "response": {
         "legs": [
@@ -755,7 +1289,6 @@
     {
       "url": "/salestunnel/step5search",
       "method": "GET",
-      "description": "TRANSPORT screen",
       "queryString": {
         "pickup": "dateTime",
         "airport": "string",
@@ -774,7 +1307,6 @@
     {
       "url": "/salestunnel/step6/id:guid",
       "method": "GET",
-      "description": "HOTEL screen",
       "queryString": null,
       "response": {
         "legs": [
@@ -801,7 +1333,6 @@
     {
       "url": "/salestunnel/step7/id:guid",
       "method": "GET",
-      "description": "COMMENTS screen",
       "queryString": null,
       "response": {
         "comments": "string"
@@ -809,151 +1340,8 @@
       "body": null
     },
     {
-      "url": "/salestunnel/shortrecap/id:guid",
-      "method": "GET",
-      "description": "SHORT RECAP screen",
-      "queryString": null,
-      "response": {
-        "total": "int32",
-        "informations": [
-          {
-            "order": "int32",
-            "departAirport": "string",
-            "arrivalAirport": "string",
-            "items": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ]
-          }
-        ],
-        "flightPackage": [
-          {
-            "order": "int32",
-            "departAirport": "string",
-            "arrivalAirport": "string",
-            "items": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ]
-          }
-        ],
-        "handling": [
-          {
-            "order": "int32",
-            "departAirport": "string",
-            "arrivalAirport": "string",
-            "items": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ]
-          }
-        ],
-        "catering": [
-          {
-            "order": "int32",
-            "departAirport": "string",
-            "arrivalAirport": "string",
-            "items": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ]
-          }
-        ],
-        "hotel": [
-          {
-            "order": "int32",
-            "departAirport": "string",
-            "arrivalAirport": "string",
-            "items": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ]
-          }
-        ],
-        "transport": [
-          {
-            "order": "int32",
-            "departAirport": "string",
-            "arrivalAirport": "string",
-            "items": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ]
-          }
-        ]
-      },
-      "body": null
-    },
-    {
-      "url": "/salestunnel/recap/id:guid",
-      "method": "GET",
-      "description": "FULL RECAP screen",
-      "queryString": null,
-      "response": {
-        "total": "int32",
-        "legs": [
-          {
-            "order": "int32",
-            "departAirport": "string",
-            "arrivalAirport": "string",
-            "total": "int32",
-            "informations": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ],
-            "flightPackage": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ],
-            "handling": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ],
-            "catering": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ],
-            "hotel": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ],
-            "transport": [
-              {
-                "label": "string",
-                "price": "string"
-              }
-            ]
-          }
-        ]
-      },
-      "body": null
-    },
-    {
       "url": "/salestunnel/step1",
       "method": "POST",
-      "description": "INFORMATION screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -978,7 +1366,6 @@
     {
       "url": "/salestunnel/step2",
       "method": "POST",
-      "description": "FLIGHT PACKAGE screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -994,7 +1381,6 @@
     {
       "url": "/salestunnel/step3",
       "method": "POST",
-      "description": "HANDLING screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -1015,7 +1401,6 @@
     {
       "url": "/salestunnel/step4",
       "method": "POST",
-      "description": "CATERING screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -1039,7 +1424,6 @@
     {
       "url": "/salestunnel/step5",
       "method": "POST",
-      "description": "TRANSPORT screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -1050,27 +1434,7 @@
             "reservations": [
               {
                 "id": "guid",
-                "providerId": "guid",
-                "travel": {
-                  "pickup": "dateTime",
-                  "origin": "string",
-                  "destination": "string",
-                  "destinationLocation": {
-                    "longitude": "double",
-                    "latitude": "double"
-                  }
-                },
-                "car": {
-                  "title": "string",
-                  "category": "string",
-                  "samples": "string",
-                  "imageWeb": "string",
-                  "imageLogo": "string",
-                  "imageMobilelogo": "string",
-                  "passengers": "int32",
-                  "bagages": "int32"
-                },
-                "pax": "boolean"
+                "providerId": "guid"
               }
             ]
           }
@@ -1080,7 +1444,6 @@
     {
       "url": "/salestunnel/step6",
       "method": "POST",
-      "description": "HOTEL screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -1106,7 +1469,6 @@
     {
       "url": "/salestunnel/step7",
       "method": "POST",
-      "description": "COMMENTS screen",
       "queryString": null,
       "response": null,
       "body": {
@@ -1117,7 +1479,6 @@
     {
       "url": "/users",
       "method": "GET",
-      "description": null,
       "queryString": null,
       "response": {
         "isPilotSet": "boolean",
@@ -1139,7 +1500,6 @@
     {
       "url": "/users/create",
       "method": "POST",
-      "description": null,
       "queryString": null,
       "response": null,
       "body": {
@@ -1150,7 +1510,6 @@
     {
       "url": "/users/acknowledged",
       "method": "PUT",
-      "description": null,
       "queryString": null,
       "response": null,
       "body": null
@@ -1187,6 +1546,13 @@
     }
   },
   "types": {
+    "decimal": {
+      "zero": "decimal",
+      "one": "decimal",
+      "minusOne": "decimal",
+      "maxValue": "decimal",
+      "minValue": "decimal"
+    },
     "geoCodeLocation": {
       "longitude": "double",
       "latitude": "double"

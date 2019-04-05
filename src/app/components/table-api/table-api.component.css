@@ -1,35 +1,34 @@
 .content {
-    
+position: relative;
+z-index: 1;
+height: 100%;
 }
-.info-table {
+.table-info {
     width: 100%;
+    position: relative;
 }
 .name-api {
-	position:sticky;top:10px;
 	background: white;
-    grid-column: 1;
-    width:100%;
+  grid-column: 1;
+  width:100%;
 }
+
 .method-api {
-	position:sticky;top:0px;
 	grid-column: 2;
     background: white;
     width:100%;
 }
 .parameter-api {
-	position:sticky;top:0px;
 	background: white;
     grid-column: 3;
     width:100%;
 }
 .url-api {
-	position:sticky;top:0px;
 	background: white;
     grid-column: 4;
     width:100%;
 }
 .description-api {
-	position:sticky;top:0px;
 	background: white;
     grid-column: 5;
     width:100%;
@@ -81,13 +80,42 @@ p.description {
 }
 .description-api-value {
     height: 100%;
+    align-items: center;
 }
-.description-api-value button {
-    display: block;
-    margin: auto;
-    background: #eee;
-    border-radius: 5%;
-    width: 120px;
-    height: 60%;
-    align-self: center;
+.description-api-value div.btn {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
 }
+button.btn-see-details {
+  width: 120px;
+  height: 40px;
+  color: #aaa;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 1.2em;
+  background: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.infos-routes {
+  position: absolute;
+  padding: 4%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: #eee;
+}
+.first-color {
+  background: #ccc;
+  width: 100%;
+}
+.second-color {
+  background: #eee;
+  width:100%;
+}
+

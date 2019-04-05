@@ -12,5 +12,9 @@ export class HttpService {
     return this.http.get('../../assets/datasApi.json');
   }
 
+  public addComment(comment: any) {
+    return this.http.put('../../assets/datasApi.json', { comment: comment });
+  }
+
 
 }

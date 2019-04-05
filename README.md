@@ -1,14 +1,32 @@
 # ApiDocView
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+* Goal : Create an API UI from a JSON file.  
+* json file name : datasApi.json
+* json file path : src/assets/datasApi.json
+* the file is a list of routes: []
+* one route is like the example below :
+
+```
+{
+      "url": "/authentication/login",
+      "method": "GET",
+      "description": "SIGN IN screen",
+      "queryString": {
+        "email": "string",
+        "password": "string"
+      },
+      "response": {
+        "idToken": "string",
+        "expiresIn": "int32"
+      },
+      "body": null
+    }, 
+    ```
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 

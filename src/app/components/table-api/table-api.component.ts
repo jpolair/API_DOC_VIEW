@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../../services/http.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-table-api',
@@ -9,57 +10,37 @@ import { HttpService } from '../../services/http.service';
 export class TableApiComponent implements OnInit {
   public datasApi: any;
   public routesNames: string[] = [];
-  public isDetail: boolean = false;
-  public detailRoute: any = [];
-  public queryStr: any = [];
-  public body: any = [];
 
-  constructor(private httpService: HttpService) { }
+  constructor(private httpService: HttpService, private router: Router) { }
 
   ngOnInit() {
     this.httpService.getDatasApi()
     .subscribe( data => {
       data['name_api'] = 'API DOC Flyops';
       this.datasApi = data;
-      console.log('data Api ', data);
       this.getTitles(data);
     }, err => {
       console.log('error ', err);
-    })
+    });
   }
 
-  public getTitles(datasApi) {
-    let tmp = [];
-    datasApi.routes.forEach( (route) => {
-      let tmpRoutes  =  route.url.split('/');
-      tmp.push(tmpRoutes[1])
-    })
+  public getTitles(datasApi: any) {
+    const tmp = [];
+    datasApi.routes.forEach( (route: any) => {
+      const tmpRoutes  =  route.url.split('/');
+      tmp.push(tmpRoutes[1]);
+    });
     this.routesNames = tmp.filter(function(item, pos, self) {
-      return self.indexOf(item) == pos;
+      return self.indexOf(item) === pos;
   });
-  console.log('routesName ', this.routesNames)
   }
 
-  public seeDetails(route) {
-    this.isDetail = true;
-    for(let  one in route.response) {
-      let val = one + ' : ' + route.response[one]
-      this.detailRoute.push(val)
-    }
-    for(let  one in route.queryString) {
-      let val = one + ' : ' + route.queryString[one]
-      this.queryStr.push(val)
-    }
-    for(let  one in route.body) {
-      let val = one + ' : ' + route.body[one]
-      this.body.push(val)
-    }
+  public seeDetails(route: any) {
+    this.router.navigate(['edit-route' ], { queryParams: { datasRoute: JSON.stringify(route) }});
   }
 
-  public closeDetail() {
-    this.isDetail = false;
-    this.detailRoute = null;
+  public isEven(nameApi: any) {
+    const name = nameApi.url.split('/')[1];
+    return this.routesNames.indexOf(name) % 2 === 0;
   }
-
-  
 }

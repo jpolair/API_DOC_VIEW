@@ -1,0 +1,19 @@
+.button-back-comment {
+	text-align: center;
+}
+.btn-back {
+	width: 126px;
+	height: 60px;
+	background: #22dd66;
+	color: white;
+	font-size: 1em;
+	margin-right: 10px;
+}
+.btn-comment {
+	width: 126px;
+	height: 60px;
+	background: #FF8811;
+	color: white;
+	font-size: 1em;
+	margin-left: 10px;
+}
