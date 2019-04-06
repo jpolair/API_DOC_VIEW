@@ -89,8 +89,3 @@
     </div>
   <!-- </div> -->
 </div>
-
-<div *ngIf="isDetail && detailRoute" class="infos-routes">
-  <pre>{{ detailRoute | json }}</pre>
-  <button (click)="isDetail = false; detailRoute = null">Close</button>
-</div>

@@ -1,3 +1,5 @@
 <h1 class="main-title">Docs Flyops API</h1>
-<!-- <app-table-api></app-table-api> -->
-<router-outlet></router-outlet>
+<main [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</main>
+

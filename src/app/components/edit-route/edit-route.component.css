@@ -9,6 +9,16 @@
 	font-size: 1em;
 	margin-right: 10px;
 }
+.btn-back:hover {
+	width: 126px;
+	height: 60px;
+	background: white;
+	color: #22dd66;
+	font-size: 1em;
+  margin-right: 10px;
+  border: 1 px solid #22dd66;
+  cursor: pointer;
+}
 .btn-comment {
 	width: 126px;
 	height: 60px;
