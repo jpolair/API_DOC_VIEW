@@ -100,6 +100,10 @@ button.btn-see-details {
   border: 1px solid white;
   border-radius: 5px;
 }
+button.btn-see-details:hover {
+  cursor: pointer;
+  color: #555;
+}
 .infos-routes {
   position: absolute;
   padding: 4%;

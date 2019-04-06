@@ -19,10 +19,10 @@ export class EditRouteComponent implements OnInit {
   }
 
   public goBack() {
-    this.router.navigate(['']);
+    this.router.navigate(['table-api']);
   }
 
-  public addComment() { // TODO create an access to PUT and change comment 
+  public addComment() { // TODO create an access to PUT and change comment
     this.datasRoute['comment'] = 'un super commentaire';
     this.http.addComment(this.datasRoute).subscribe( data => {
       console.log('data ', data);
